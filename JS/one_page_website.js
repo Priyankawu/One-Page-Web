@@ -2,8 +2,7 @@
 
 //Makes the picture is clicked on bigger.
 function openModal() {
-    var element = getElementById("myModal").style.display = "block";
-    console.log(getElementById("myModal"));
+    document.getElementById("myModal").style.display = "block";
 }
 
 //closes the modal when someone clicks the X sign.
@@ -20,13 +19,17 @@ function plusSlides(n) {
     showSlides(slideIndex += n);
 }
 
+function currentSlide(n){
+    showSlides(slideIndex = n);
+}
+
 //This is how the n slide is shown.
 function showSlides(n) {
     var i;
     // that element is like an array of things [div.mySlides, div.mySlides, div.mySlides, div.mySlides]
     var slides = document.getElementsByClassName("mySlides");
-    console.log(slides);
-    //console.log("++++++++++ "+slides.length);
+    console.log("+++++++++++ all slides ++++++++++" + slides);
+    console.log("++++++++++ "+slides.length);
     var dots = document.getElementsByClassName("demo");
     var captionText = document.getElementById("caption");
     
@@ -35,7 +38,7 @@ function showSlides(n) {
     if (n < 1) {slideIndex = slides.length}
 
     for(i=0; i<slides.length; i++) {
-        slides[i].style.display = none;
+        slides[i].style.display = "none";
     }
     for (i=0; i <dots.length; i++) {
         dots[i].className.replace(" active","");

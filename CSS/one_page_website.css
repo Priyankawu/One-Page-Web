@@ -1,5 +1,5 @@
 .row_raj {
-  	display: flex;
+	display: flex;
 	background-color: brown;
 	border-radius: 5%
 }
@@ -15,11 +15,17 @@
 }
 
 .column {
-  flex: 33.33%;
+  /*flex: 33.33%;*/
   padding: 2px;
   float: left;
 }
 
+img {
+	text-align: center;
+	width: 100%;
+	height: 100%;
+	padding: 10px;
+}
 
 /* The Modal (background)---------- MODAL STYLESHEET --------------------- */
 .modal {
@@ -77,9 +83,9 @@
 	-webkit-user-select: none;
 }
 
-.next {
+/*.next {
 	right:0;border-radius: 3px 0 0 3px;
-}
+}*/
 
 .numbertext {
 	color: #f2f2f2;
@@ -106,11 +112,11 @@ a{
 }
 .appearance{
 		border-radius: 10px;
-		width:100;
-		height:100;
+		/*width:100;
+		height:100;*/
 }
 img:hover {
-	transform: scale(1.1);
+	/*transform: scale(1.1);*/
 	
 }
 
