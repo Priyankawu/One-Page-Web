@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet"  type="text/css" href="CSS/one_page_website.css">
+	<script src="JS/one_page_website.js"></script>
+</head>
+
+<body>
+    <!-------------------------------------- NAVIGATION ------------------------------------------>
+    <nav class="shadow_effect">
+		<a href="#home" id="home">HOME | </a>
+		<a href="#gallery">GALLERY | </a>
+		<a href="#reservation">RESERVATION | </a>
+		<a href="#contact">CONTACT | </a>
+	</nav>
+	<!--------------------------------------- ABOUT  ------------------------------------------>
+	<div>
+		<h1>TOUR TO INDIA</h1>
+		<p>  Come tour the beautiful state of Rajasthan with us.<br><br>
+		Tour <span class="shadow_effect" style=color:red font-weight:bold>RAJASTHAN</span> with the beautiful Thar
+		desert and immerse in the local culture of colors and hospitality. This tour takes place on 1st March and lasts for 2 weeks.
+		We will visit a variety of urban and rural scenic places. </p>
+	</div>
+	<!---------------------------------------- GALLERY -------------------------------------------->
+	<div id="gallery">
+		<h2>GALLERY:</h2>
+        <!--------------------------------- RAJASTHAN PICTURES --------------------------------->
+		<h2> Tour Rajasthan Pictures: </h2>
+		<p>To enlarge, hover mouse over the pictures.</p>
+		<div class="row_raj">	
+            <div class="column">
+				<img class="appearance" onclick="openModal(); currentSlide(1)" src="one_images/rajasthan/raj_1.jpg" alt="Photo Download Error"/>
+			</div>
+			<div class="column">
+				<img class="appearance" src="one_images/rajasthan/raj_2.jpg" alt="Photo Download Error"/>
+			</div>
+			<div class="column">
+				<img class="appearance" src="one_images/rajasthan/raj_3.jpg" alt="Photo Download Error"/>
+			</div>
+			<div class="column">
+				<img class="appearance" src="one_images/rajasthan/raj_4.jpg" alt="Photo Download Error"/>
+			</div>
+			<div class="column">
+				<img class="appearance" src="one_images/rajasthan/raj_5.jpg" alt="Photo Download Error"/>
+			</div>
+		</div>
+	</div>
+<!--------------------------------------- MODAL ------------------------------------------------------>
+	<div id="myModal" class="modal">
+		<span class="close cursor" onclick="closeModal()">&times;</span>
+		<div class="modal-content">
+			<div class="mySlides">
+				<div class="numbertext">1/4</div>
+				<img src="one_images/rajasthan/raj_1.jpg" alt="">
+			</div>
+			<div class="mySlides">
+				<div class="numbertext">2/4</div>
+				<img src="one_images/rajasthan/raj_2.jpg" alt="">
+			</div>
+			<div class="mySlides">
+				<div class="numbertext">3/4</div>
+				<img src="one_images/rajasthan/raj_3.jpg" alt="">
+			</div>
+			<div class="mySlides">
+				<div class="numbertext">4/4</div>
+				<img src="one_images/rajasthan/raj_4.jpg" alt="">
+			</div>
+				
+			<a class="prev" onclick="plusSlides(-1)" &#10094;></a>
+			<a class="next" onclick="plusSlides(1)" &#10095;></a> 
+			<div class="caption-container">
+				<p id="caption"></p>
+            </div>
+				
+			<!----------------------------- 4 PICS BELOW MODAL-------- --------------------->
+			<div class="column">
+                <img class= "demo cursor" src="one_images/rajasthan/raj_1.jpg" 
+                onclick="currentSlide(1)" style="width:100%" alt="Rajasthan1">
+			</div>
+			<div class="column">
+                <img class= "demo cursor" src="one_images/rajasthan/raj_2.jpg" 
+                onclick="currentSlide(2)" style="width:100%" alt="Rajasthan1">
+			</div>
+			<div class="column">
+                <img class= "demo cursor" src="one_images/rajasthan/raj_3.jpg" 
+                onclick="currentSlide(3)" style="width:100%" alt="Rajasthan1">
+            </div>
+            <div class="column">
+                <img class= "demo cursor" src="one_images/rajasthan/raj_4.jpg"
+                 onclick="currentSlide(4)" style="width:100%" alt="Rajasthan1">
+			</div>
+        </div>
+    </div>
+    <br>
+	<!-- ---------------------------------------- VIDEOS ------------------------------------------------------------>	
+    <div id="videos">
+		<h2>Rajasthan Videos:<h2>
+		<div class="row_raj">
+			<iframe class="column" src="https://www.youtube.com/embed/sWMnfd4Cras" width="250" height="200" controls=1></iframe>
+			<iframe class="column" src="https://www.youtube.com/embed/9ejAPbElnok" width="250" height="200" controls=1></iframe-->
+		</div>
+	</div>
+    <br>
+    <!------------------------------------------ RESERVATION ----------------------------------------->
+	<div id="reservation">
+		<h2>RESERVATION:</h2>
+		<form action="" method="POST">
+			Name of Tour: <input class="rsvp" type="text" value=" " placeholder="Name of Tour"><br><br>
+			Number of People: <input class="rsvp" type="text" value=" " placeholder="Number of People"><br><br>
+			First Name: <input class="rsvp" type="text" value="" placeholder="First Name"><br><br>
+			Last Name: <input class="rsvp" type="text" value="" placeholder="Last Name"><br><br>
+			Email Address: <input class="rsvp" type="text" value="" placeholder="Email Address"><br><br>
+			Phone Number: <input class="rsvp" type="text" value="" placeholder="Phone Number"><br><br>
+			<div class="submit">
+				<input type="submit" value="Submit">
+			</div>
+		</form>
+	</div>
+	<br>
+	<!------------------------------------------ CONTACT ----------------------------------------->
+	<div id="contact">
+		<h2>OUR CONTACT:</h2>
+		<p>If you have any questions, please feel free to contact us at the following:</p>
+		
+			<p>Email Address : india_tour@gmail.com<br>
+			Phone Number: 711153949 </p><br></br>
+	</div>
+    <br>
+    <!------------------------------------------ FOOTER  ----------------------------------------->
+	<div id="footer">
+		<p>www.one_page_website.com &nbsp;|&nbsp; &copy; 2016</p>
+	</div>
+</body>
+</html>

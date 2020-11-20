@@ -20,7 +20,8 @@
   float: left;
 }
 
-/* The Modal (background) */
+
+/* The Modal (background)---------- MODAL STYLESHEET --------------------- */
 .modal {
 	display: none;
 	position: fixed;
@@ -87,7 +88,7 @@
 	position: absolute;
 	top: 0;
 }
-
+/* ---------------------- MODAL STYLESHEET ------------------------- */
 
 .shadow_effect{
 	font-size: 24px;
