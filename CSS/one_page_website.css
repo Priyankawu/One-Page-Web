@@ -1,6 +1,6 @@
 .row_raj {
 	display: flex;
-	background-color: brown;
+	background-color:#f2d16b;
 	border-radius: 5%
 }
 
@@ -15,9 +15,11 @@
 }
 
 .column {
-  /*flex: 33.33%;*/
-  padding: 2px;
+  padding: 1px;
   float: left;
+  margin-bottom:10px;
+  margin-right:10px;
+  overflow:hidden;
 }
 
 img {
@@ -43,7 +45,7 @@ img {
 
 .modal-content {
 	position: relative;
-	background-color: #fefefe;
+	background-color: black;
 	margin: auto;
 	padding: 0;
 	width: 90%;
@@ -60,12 +62,24 @@ img {
 	font-weight: bold;
 }
 
+.demo {
+	opacity: 0.6;
+	
+  }
+  
+  .active,
+  .demo:hover {
+	opacity: 1;
+  }
+
 .cursor {
 	cursor: pointer;
 }
 
 .mySlides {
 	display: none;
+	height: 200px;
+	width:
 }
 .prev, .next {
 	cursor: pointer;
@@ -83,9 +97,13 @@ img {
 	-webkit-user-select: none;
 }
 
-/*.next {
+.next {
 	right:0;border-radius: 3px 0 0 3px;
-}*/
+}
+
+.caption-container {
+	background:black
+}
 
 .numbertext {
 	color: #f2f2f2;
@@ -99,8 +117,7 @@ img {
 .shadow_effect{
 	font-size: 24px;
 	font-weight:bold;
-	text-shadow: 2px 5px 5px red;
-
+	text-shadow: 2px 10px 10px rgb(241, 119, 14);
 }
 
 a{
@@ -112,12 +129,9 @@ a{
 }
 .appearance{
 		border-radius: 10px;
+		cursor: pointer;
 		/*width:100;
 		height:100;*/
-}
-img:hover {
-	/*transform: scale(1.1);*/
-	
 }
 
 #reservation form{
@@ -134,7 +148,7 @@ img:hover {
 
 #contact, #reservation, #videos, #footer{
 	border: none;
-	background-color: lightgray;
+	background-color:#e8e8e8;
 	box-shadow: 2px 3px 3px 0px rgba(0,0,0,0.3);
 	border-radius: 5%;
 	padding: 15px;
@@ -175,5 +189,6 @@ p {
     font-family: sans-serif;
 	font-size: 20px;
 	line-height: 25px;
+	color:black;
 }
 
